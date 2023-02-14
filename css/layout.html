@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout using grid</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* no. of coloumns */
+            /* grid-template-columns: 4fr 2fr 1fr; */
+            grid-template-rows: auto 1fr auto;
+            column-gap: 1rem;
+            row-gap: 2rem;
+        }
+        
+        .item{
+            outline: solid #000;
+            padding: 1rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati eum esse corrupti pariatur fuga consequatur ullam autem tempore assumenda. Incidunt ipsa nisi eligendi dolorum ex.</p>
+        </div>
+        <div class="item">
+            <h1>Ullam, unde nulla?</h1>
+            <p>Temporibus ullam sit perferendis aperiam quos quo nostrum necessitatibus omnis quod assumenda exercitationem iste quidem hic, quas fugit. Reiciendis nesciunt quam atque natus itaque! Placeat.</p>
+        </div>
+        <div class="item">
+            <h1>Quibusdam, pariatur labore.</h1>
+            <p>Officia expedita quod temporibus facere maxime necessitatibus minima excepturi repellendus veritatis maiores rerum eligendi repudiandae molestiae numquam inventore, qui non laboriosam animi aperiam dolor laborum!</p>
+        </div>
+        <div class="item">
+            <h1>Nihil, molestiae perferendis.</h1>
+            <p>Rem esse a maxime placeat quisquam! Temporibus vero magnam delectus porro animi. Quidem, autem dolorem! Voluptatibus velit dolorem debitis ratione eaque deleniti sint nulla harum?</p>
+        </div>
+        <div class="item">
+            <h1>Possimus, modi cumque.</h1>
+            <p>Suscipit iusto earum accusamus ipsum! Mollitia porro quasi provident qui quia placeat illo impedit consectetur, debitis blanditiis voluptatum nesciunt explicabo consequuntur omnis vitae? Nobis, temporibus!</p>
+        </div>
+        <div class="item">
+            <h1>Ab, modi illum.</h1>
+            <p>Sunt repudiandae iure tempora, corporis eos maiores alias nulla, placeat sint doloribus et in non vel optio dolorem! Dicta, voluptate tempora quas odio mollitia nisi!</p>
+        </div>
+        <div class="item">
+            <h1>Temporibus, hic totam?</h1>
+            <p>Dignissimos est quibusdam dolorum officia officiis minima nihil facere, nesciunt consectetur fuga nemo exercitationem tenetur explicabo laboriosam dicta aperiam recusandae enim. Error ullam autem facere!</p>
+        </div>
+        <div class="item">
+            <h1>Cumque, reiciendis harum.</h1>
+            <p>Exercitationem dicta explicabo corrupti excepturi eligendi quasi, quam nostrum minima dignissimos architecto quisquam officia praesentium sint repellat doloremque similique facilis! Reprehenderit, illo. Repellat, consequuntur veritatis.</p>
+        </div>
+        <div class="item">
+            <h1>Odio, harum accusamus?</h1>
+            <p>Beatae deserunt facere quisquam ea quo fugit nobis natus unde quis nulla recusandae veritatis corporis quia molestias blanditiis dicta nemo soluta temporibus, modi, mollitia ex?</p>
+        </div>
+
+    </div>
+</body>
+</html>

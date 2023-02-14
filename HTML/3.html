@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label for = "name">Your name</label>
+                <input type = "text" name = "username" id = "name" 
+                placeholder="John0001" title="User name must be 8 letter"
+                pattern="[A-Za-z0-9]{4,}">
+            </div>
+        
+    
+            <div>
+                <input type = "checkbox" name = "accept" id = "accept_cb">
+                <label for="accept_cb">Do you accept?</label>
+            </div>
+            <div>
+                <label for = "email">E-mail</label>
+                <input type="email" name="email" id="email" required autocomplete="off">
+            </div>
+            <div>
+                <input type="color" name="favcolor">
+                <input type="date" name="DOB">
+                <br>
+                <input type="datetime-local" name="DOBdate">
+                <br>
+                <input type="file" name="image">
+                <input type="hidden" name="pin" value="223">
+                <br>
+                <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" width="100">
+            </div>
+            <div>
+                <input type="radio" name="gender" value="M" id="Male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="F" id="Female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="O" id="Others">
+                <label for="others">Others</label>
+            </div>
+            <div>
+                <label for="enter_range">Mention the range</label>
+                <input type="range" name="rangein">    
+            </div>
+            <div>
+                <label for="write_searchbar">Write in search bar</label>
+                <input type="search" name="searchbar">
+            </div>
+            <div>
+                <input type="week" name="weekdaysweekends">
+            </div>
+            <input type="submit" value="Submit">
+        </form> 
+    </div>       
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Form Element</title>
+    <link rel="stylesheet" href="../demo.css">
+</head>
+<body>
+    <form method="post">
+        <select name = "education">
+            <option selected disabled>Choose your education</option>
+            <option value="N">None</option>
+            <option value="H">HighSchool</option>
+            <option value="C">College</option>
+            <option value="M">Masters</option>
+            <option value="P">PhD</option>
+        </select>
+        <!--Multiple selection--> 
+        <select name="food" multiple>
+            <option value="B">Burger</option>
+            <option value="F">Fries</option>
+            <option value="S">Shakes</option>
+        </select>
+        <div>
+            <label for="movie">Select a movie</label>
+            <input type="text" name="movie" list="movies" id="movie">
+            <datalist id="movies">
+                <option value="Brahmastra"></option>
+                <option value="Pathaan"></option>
+                <option value="Bhool Bhulaiya"></option>
+                <option value="Jab We Met"></option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>

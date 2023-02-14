@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple menu</title>
+
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            /* box-sizing stop the expanding of an object */
+        }
+        
+        #main-menu{
+            background-color: rgba(178, 173, 35, 0.8);
+            padding: 1rem;
+        }
+        
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+        }
+
+        /* only .nav-item class belonging to .menu parent will have this setting */
+        .menu .nav-item{
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: burlywood;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            transition: all 350ms ease-in-out;
+        }
+
+        .menu .nav-item:hover{
+            background-color: #fdf985;
+            box-shadow: 0 0 .5rem #000;
+        }
+        
+        .menu .nav-item .nav-link{
+            text-decoration: none;
+            /* remove underline from a tag */
+            color: #000;
+            cursor: pointer;
+        
+        }
+        
+        #footer-menu{    
+        
+            padding: 1rem;
+            height: 20rem;
+            background-color: #2d2b2b;
+        }
+
+        #footer-menu .nav-item{
+            background-color: transparent;
+            font-size: 1rem;
+        }
+        #footer-menu .nav-link{
+            color: #f1ecec;
+        }
+        #footer-menu .menu{
+            flex-direction: column;
+        }
+
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 2rem;
+        }
+        .cards img{
+            width: 350px;
+            aspect-ratio: 1/1;
+        }
+        .cards h2{
+            width: 350px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-menu">
+        <ul class="menu">
+            <li class="nav-item"><a href="#" class="nav-link">Deleniti!</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Praesentium?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Expedita.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Lorem.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Natus!</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1670923787875-c18a34912e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1660510200089-ba3950a07493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfE04alZiTGJUUndzfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60" alt="">
+            <h2>Quibusdam reiciendis quasi culpa earum.</h2>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1519580930435-fbfc9e7ecf26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60" alt="">
+            <h2>Voluptatibus officiis beatae tempora molestias!</h2>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1515261439133-0f6cfb098e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGNvbG9yc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60" alt="">
+            <h2>Aperiam minus suscipit fuga neque.</h2>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1543906965-f9520aa2ed8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VsdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60" alt="">
+            <h2>Minus quibusdam facere hic commodi?</h2>
+        </div>
+    </section>
+
+    <nav id="footer-menu">
+        <ul class="menu">
+            <li class="nav-item"><a href="#" class="nav-link">Deleniti!</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Praesentium?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Expedita.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Lorem.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Natus!</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

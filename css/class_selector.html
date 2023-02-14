@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Class Selection</title>
+    <style>
+        .container{
+            padding: 2rem;
+            background: #fdfdfd;
+        }
+        .row{
+            background: #a68585;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .heading{
+            color: rgb(75,27,27);
+            font-family: Arial;
+            margin: 0;
+        }
+        .content{
+            color: #272626;
+            font-family: Calibri;
+            margin-bottom: 1rem;
+        }
+        .btn{
+            background: #bc7217;
+            color: #fefefe;
+            font-family: Calibri;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: o.5rem;
+        }
+        .special{
+            background-image: url("data:image/jpeg;base64,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");
+            background-size: cover;
+            background-position: fixed;
+            background-position: top;
+            height: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est?</h1>
+            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique reprehenderit nemo, eligendi autem, saepe, error obcaecati laborum tempora reiciendis quis voluptates. Illum doloribus, dicta quos molestiae aspernatur minima non recusandae facilis reiciendis reprehenderit aperiam, corrupti eum ducimus officia dolore autem ipsum soluta sequi et ipsam atque amet eius? Placeat!</div>
+            <button class="btn">View More</button>
+        </div>
+        <div class="row">
+            <h1 class="heading">Voluptas eaque alias distinctio vero reprehenderit quo doloribus voluptatibus vel?</h1>
+            <div class="content">Nulla illo ratione adipisci labore? Sapiente voluptatum excepturi at ea nemo molestias voluptatibus magnam consequatur. Corrupti dignissimos animi sunt porro dolorem laboriosam aliquam veniam error incidunt magni ad, cumque consequatur quidem, omnis quos voluptatem sint, et cupiditate. Veniam soluta mollitia, aperiam eius illo facilis est dolore sequi omnis quisquam vel?</div>
+            <button class="btn">View More</button>
+        </div>
+        <div class="row" id="special">
+            <h1 class="heading">Excepturi itaque tenetur labore unde? Aliquid minima iure in ipsam.</h1>
+            <div class="content">Ut praesentium minima impedit velit architecto maxime, culpa omnis qui dignissimos possimus ea eos error repellendus odit dolor sequi rerum voluptates numquam corrupti! Cupiditate harum totam saepe laborum et! Dolore debitis ullam inventore! Nostrum, atque nisi nihil odit, non quis cumque quod, perferendis vero est accusamus qui accusantium ullam! Expedita!</div>
+            <button class="btn">View More</button>
+        </div>
+        <div class="row">
+            <h1 class="heading">Fugit voluptas impedit asperiores rem magni quam itaque illum magnam.</h1>
+            <div class="content">Similique suscipit molestias accusamus, minus facilis dolor deleniti, esse, itaque nihil cum at ullam excepturi sunt? Voluptates, facere assumenda inventore nulla quaerat ipsam temporibus eveniet quod? Doloribus repellendus tenetur eius quas distinctio fugiat assumenda obcaecati placeat porro doloremque voluptatibus, excepturi incidunt sed explicabo quis laudantium ex tempora consectetur asperiores? Dolore?</div>
+            <button class="btn">View More</button>
+        </div>
+        <div class="row">
+            <h1 class="heading">Suscipit ea dolore voluptate omnis aperiam incidunt quo blanditiis cupiditate?</h1>
+            <div class="content">Vero nihil dolore eius, officia distinctio quis velit doloribus sapiente non, fuga illo facilis nam dolorum voluptates nobis atque totam eaque qui possimus maiores vel dicta eum, consequatur eligendi? Rem possimus architecto ullam, illum earum pariatur quae facilis at eius! Dolor aut placeat earum facilis facere tempore necessitatibus quae consectetur?</div>
+            <button class="btn">View More</button>
+        </div>
+        <div class="row">
+            <h1 class="heading">Sapiente ea tempora fugiat ut ipsa aspernatur rerum minima tenetur.</h1>
+            <div class="content">Dolore eligendi quidem odio blanditiis dolores veniam ex reiciendis beatae ipsa voluptatibus ipsum quam corrupti placeat, sit iusto optio accusamus aperiam fuga pariatur alias maiores consectetur a? Cupiditate nihil deleniti dolorem iure maiores, obcaecati error repellat esse tempora temporibus voluptatum qui sit veniam expedita, commodi, mollitia illum beatae in odio?</div>
+            <button class="btn">View More</button>
+        </div>
+    </div>
+</body>
+</html>
