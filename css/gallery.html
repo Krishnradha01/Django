@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,10 @@
     <style>
         .gallery{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
             gap: 2rem;
         }
+        
         .card{
             display: flex;
             flex-flow: row wrap;
@@ -21,15 +23,17 @@
             box-shadow: 0px 0px 3px #000;
             padding: 1rem;
         }
+        
         .head{
             display: flex;
             flex-flow: row nowrap;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             width: 100%;
-            overflow: hidden;
+            overflow-x: hidden;
         }
+        
         h1{
             margin: 0;
             padding:0;
@@ -37,22 +41,24 @@
             white-space: nowrap;
         }
 
-        .head{
-            padding: 1rem;
+        .head i{
+            padding-right: 1rem;
         }
         a{
-            width: 10rem;
+            width: 8rem;
             padding: .5rem;
             background-color: #000;
             color: white;
             border-radius: 3px;
             border: none;
+            text-align: center;
         }
         a:hover, a:focus{
             background-color: #f37628;
         }
     </style>
 </head>
+
 <body>
     <div class="gallery">
         <div class="card">
@@ -60,10 +66,12 @@
                 <i class="fa fa-user fa-2x"></i>
                 <h1>Lorem, ipsum dolor.</h1>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio deserunt provident facilis officiis obcaecati vel tenetur ipsa adipisci, optio eligendi nobis mollitia, expedita minima odit sequi quos non tempora!</p>
-            <button>
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Impedit odio deserunt provident facilis officiis obcaecati vel tenetur ipsa adipisci, optio eligendi nobis mollitia, 
+                expedita minima odit sequi quos non tempora!</p>
+            <a>
+                Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
         <div class="card">
             <div class="head">
