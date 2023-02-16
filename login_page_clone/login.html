@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in to your account</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <a href="#" class="brand">
-            <img src="#" alt="brand logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/DigitalOcean_logo.png" alt="brand logo">
         </a>
         <p class="infomsg">
             <span>Need an account</span>
@@ -20,16 +21,56 @@
     </header>
     <main>
         <div class="left">
-            <!-- form yaha hoga -->
+            <div class="form-card">
+                <div class="card-body">
+                    <div class="header">
+                        <h2>Log in to your account</h2>
+                    </div>
+                    <form>
+                        <div class="form-control">
+                            <label for="email">
+                                email<span>*</span>
+                            </label>
+                            <input id="email" type="email" placeholder="Enter your email address" autocomplete="none"
+                                class="input-email" name="email" value="aakshita0104@gmail.com" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="password">
+                                password<span>*</span>
+                            </label>
+                            <input id="password" type="password" placeholder="Enter password" autocomplete="none"
+                                class="input-password" name="password" value="*********" required>
+                        </div>
+                        <button type="submit" class="btn btn-login">Log In</button>
+                    </form>
+                    <hr>
+                    <div dispaly="btn-wrapper">
+                        <button class="btn btn-google">
+                            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="google logo"> Sign In with Google
+                        </button>
+                    </div>
+                    <div display="btn-wrapper">
+                        <button class="btn btn-github">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo"> Sign In with Github
+                        </button>
+                    </div>
+                    <div>
+                        <a target="_blank" class="test_line" href="#">Forgot Password</a>
+                    </div>
+                </div>
+            </div>        
         </div>
         <div class="right">
+            <img src="https://images.unsplash.com/photo-1671762413534-dd1c6aeaf284?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="ayegi image">
             <div class="content">
-                <img src="#" alt="ayegi image">
                 <h2>Lorem ipsum dolor sit amet.</h2>
-                <h4 class="lorem"></h4>
-                <div class="link"><a href="">Lorem, ipsum.</a></div>
+                <h4>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore molestiae sint vel quos, dolores ullam quaerat sed fuga tenetur officiis dolor dicta possimus reiciendis illum vero officia exercitationem, atque fugit?
+                </h4>
+                <div class="link"><a href="" class="btn btn-link">Lorem, ipsum.</a></div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
