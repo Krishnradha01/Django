@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo 2</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        
+        .box{
+            height: 10rem;
+            width: 10rem;
+            background-color: red;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="b1">1</div>
+        <div class="box" id="b2">2</div>
+    </div>
+<script>  /* (e) => {   -> anonymus*/
+    let box1 = document.querySelector('#b1');
+    let box2 = document.querySelector('#b2');
+    let box_2_is_hidden = false;  /* variable */
+    box1.addEventListener('click', (e) => {
+        if (box_2_is_hidden){
+            box2.style.display = 'flex';
+            box1.textContent = 'Visible'
+            box1.style.backgroundColor = 'red';
+            box_2_is_hidden = false;
+        } else {
+            box2.style.display = 'none';
+            box1.textContent = 'Hidden'
+            box1.style.backgroundColor = '#5754ff';
+            box_2_is_hidden = true;
+        }
+    })
+</script>
+</body>
+
+</html>
